@@ -11,7 +11,7 @@ app.use(express.urlencoded());
 app.use(cookieSession({
   secret: "Una cadena secreta",
   // Cookie Options
-  maxAge: 10 * 1000 // 3 minutes
+  maxAge: 3 * 60 * 1000 // 3 minutes
 }))
 
 app.get('/', function(req, res) {
